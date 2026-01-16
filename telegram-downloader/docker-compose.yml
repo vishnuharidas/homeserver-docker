@@ -1,0 +1,14 @@
+services:
+  tg_downloader:
+    build: .
+    container_name: tg_downloader
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # host_path : container_path
+      - ${DOWNLOAD_DIR}:${DOWNLOAD_DIR}
+      - telethon_session:/session
+
+volumes:
+  telethon_session:
