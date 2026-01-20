@@ -13,6 +13,9 @@ This repository contains Docker Compose configurations for setting up a homeserv
 
 ## Services
 
+### [Beszel](beszel/)
+Lightweight server monitoring dashboard with Docker stats, system metrics, and alerts. ([beszel.dev](https://beszel.dev))
+
 ### [Jellyfin](jellyfin/)
 Media server for managing and streaming your media library. ([jellyfin.org](https://jellyfin.org/))
 
